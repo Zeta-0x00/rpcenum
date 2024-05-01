@@ -3,14 +3,15 @@
 # Author: Marcelo Vázquez (aka S4vitar)
 
 #Colours
-greenColour="\e[0;32m\033[1m"
-endColour="\033[0m\e[0m"
-redColour="\e[0;31m\033[1m"
-blueColour="\e[0;34m\033[1m"
-yellowColour="\e[0;33m\033[1m"
-purpleColour="\e[0;35m\033[1m"
-turquoiseColour="\e[0;36m\033[1m"
-grayColour="\e[0;37m\033[1m"
+greenColour=$(tput setaf 2; tput bold)
+endColour=$(tput sgr0)
+redColour=$(tput setaf 1; tput bold)
+blueColour=$(tput setaf 4; tput bold)
+yellowColour=$(tput setaf 3; tput bold)
+purpleColour=$(tput setaf 5; tput bold)
+turquoiseColour=$(tput setaf 6; tput bold)
+grayColour=$(tput setaf 7; tput bold)
+
 
 declare -r tmp_file="/dev/shm/tmp_file"
 declare -r tmp_file2="/dev/shm/tmp_file2"
